@@ -104,6 +104,10 @@ h2{
 	justify-content: space-around;
 }
 
+.middle-img{
+    width: 100%;
+}
+
 button{
 	background-color: white;
 	color: black;
@@ -155,7 +159,7 @@ footer{
 
 /* media for tablet view */
 
-@media (max-width: 767px){
+@media (max-width: 800px){
     header{
         max-width: 90%;
     }
@@ -185,6 +189,43 @@ footer{
     }
     .headerimg {
         display: none;
+    }
+
+}
+
+/* media for mobile view */
+
+@media (max-width: 500px){
+    .container{
+        width: 90%;
+    }
+    .content1, .content2{
+        width: 95%;
+        flex-direction: column;
+    }
+    .contentblock, .contentblock2{
+        width: 90%;
+        padding-top: 3%;
+    }
+    .contentblock h4{
+        padding-top: 2px;
+    }
+    .title h1{
+        font-size: 60px;
+    }   
+
+    .anchor{
+        flex-direction: column;
+        align-items: stretch;
+        width: 125%;
+        margin-right: -15px;
+        padding: 0px;
+    }
+
+    .anchor a{
+        text-align: center;
+        border-top: 1px solid rgb(19, 18, 18);
+        border-bottom: 1px solid black;
     }
 
 }
